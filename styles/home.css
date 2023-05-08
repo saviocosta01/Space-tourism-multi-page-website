@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&family=Inter&display=swap");
+
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.image-home-mobile {
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.image-home-desktop {
+  display: none;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 8vh;
+}
+.image-setings {
+  margin-right: 10px;
+}
+.navBar {
+  background-color: transparent;
+  backdrop-filter: blur(40px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  display: none;
+}
+
+.navBar > button {
+  color: #fff;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+.logo-home {
+  padding-left: 3%;
+}
+
+.main-container {
+  width: 80%;
+  position: absolute;
+  color: #fff;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.fisrt-text {
+  font-size: 20px;
+  margin: 0;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #d0d6f9;
+}
+.main-text > h2 {
+  font-size: 80px;
+  margin: 0;
+  font-family: "Bellefair", serif;
+  font-weight: 100;
+}
+
+.text-info {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d0d6f9;
+  font-family: "Barlow", sans-serif;
+}
+
+.modal-container {
+  position: absolute;
+  background-color: transparent;
+  backdrop-filter: blur(35px);
+  right: 0;
+  height: 94.5vh;
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.div-explore {
+  width: 170px;
+  height: 170px;
+  background-color: #fff;
+  color: #0b0d17;
+  margin: 0;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-family: "Bellefair", serif;
+}
+
+.div-btns-header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 80px;
+  margin-left: 5%;
+}
+.close-btn {
+  width: 20px;
+  height: 20px;
+}
+.div-btns-header > div > button {
+  background-color: transparent;
+  color: #fff;
+  border: transparent;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.div-btns-header > div > span {
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+}
+.div-btns-header > div {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+@media (min-width: 800px) {
+  .main-container {
+    flex-direction: row;
+    margin-top: 10%;
+    gap: 20px;
+    width: 90%;
+    justify-content: space-around;
+  }
+  .div-explore {
+    width: 250px;
+    height: 250px;
+  }
+  .main-text {
+    width: 30%;
+  }
+  .fisrt-text {
+    width: 100%;
+    display: block;
+    font-size: 28px;
+  }
+  .main-text > h2 {
+    width: 100%;
+    display: block;
+    font-size: 110px;
+  }
+  .text-info {
+    font-size: 18px;
+    line-height: 2;
+  }
+  .navBar {
+    width: 60%;
+    height: 9vh;
+    gap: 5%;
+    display: flex;
+  }
+  .div-btn-home {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    height: 100%;
+    gap: 10px;
+  }
+  .div-btn-home > hr {
+    width: 60px;
+  }
+  .div-btn-home > div > button {
+    background-color: transparent;
+    border: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .div-btn-home > div > span {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+  }
+  .navBar > div {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navBar > div > button {
+    background-color: transparent;
+    border: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .navBar > div > span {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
+  }
+  .header-container {
+    margin-top: 20px;
+  }
+  .image-setings {
+    display: none;
+  }
+  .image-home-mobile {
+    display: none;
+  }
+  .image-home-desktop {
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+}
